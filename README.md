@@ -17,7 +17,7 @@ here the image runs and gets terminated.
       docker run -d -t --name={container_name} {image_name}
       docker run --rm -d -t --name={container_name} {image_name}
       docker run --rm -d -t --name={container_name} -p {local_host_port eg:8888}:{container_port eg:8888} {image_name}
-      docker run --rm -d -t --name={container_name} -p 8888:8888 --mount src="$(pwd)", target=/app, type=bind {image_name}
+      docker run --rm -d -t --name={container_name} -p 8888:8888 --mount src="$(pwd)",target=/app,type=bind {image_name}
 
 here the image is running in the background.
 
