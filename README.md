@@ -46,5 +46,37 @@ here the image is running in the background.
 
       jupyter notebook --ip='0.0.0.0' --port=8888 --no-browser --allow-root
 
+- Remove all stopped containers.
+
+      docker container prune
+    
+- Check docker build cache.
+
+      docker system df
+
+- Get IDs of all running containers.
+
+      docker ps -q
+      
+- Stop All running containers.
+
+      docker stop $(docker ps -q)
+      {replace docker stop with docker kill to foricble kill all running containers}    
+- Delete all dangling images.
+
+      docker image prune
+      
+- Remove all docker volumes.
+
+      docker volume prune
+      
+- Remove all docker network.
+
+      docker network prune
+      
+- Remove everything !!
+
+      docker system prune
+      
 - 
 
